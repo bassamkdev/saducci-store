@@ -29,7 +29,7 @@ class SignIn extends React.Component {
     render(){
         return(
             <div className='sign-in'>
-                <h2>I already have an account</h2>
+                <h2 className='title'>I already have an account</h2>
                 <span>Sign in with your email and password</span>
                 <form onSubmit={this.handleSubmit}>
                     <FormInput 
@@ -38,14 +38,14 @@ class SignIn extends React.Component {
                     value={this.state.email}
                     handleChange={this.handleChange} 
                     required
-                    lable="email" />
+                    lable="Email" />
         
                     <FormInput 
                     name='password'
                     type='password' 
                     value={this.state.password}
                     handleChange={this.handleChange}
-                    lable="password"
+                    lable="Password"
                     required />
                     <div className='buttons'>
                         <CustomButton type='submit'>Sign in</CustomButton>
