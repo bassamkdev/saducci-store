@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {selectCollection} from '../../redux/shop/shop.selectors'
 
+import {CollectionItemsContainer,CollectionPageContainer,CollectionTitle} from './collection.styled'
 import CollectionItem from '../../components/collection-item/collection-item.component';
 
 import './collection.styles.scss';
@@ -9,14 +10,14 @@ import './collection.styles.scss';
 const CollectionPage =({collection})=>{
     const { title, items } = collection;
     return(
-    <div className='collection-page'>
-    <h1 className='title'>{title.toUpperCase()}</h1>
-        <div className='items'>
-            {items.map((item) => (
-                <CollectionItem className='collection-item' key={item.id} item={item}/>
+    <CollectionPageContainer>
+    <CollectionTitle>{title.toUpperCase()}</CollectionTitle>
+        <CollectionItemsContainer>
+            {items.map(item => (
+                <CollectionItem key={item.id} item={item}/>
             ))}
-        </div>
-    </div>
+        </CollectionItemsContainer>
+    </CollectionPageContainer>
 )}
 
 const mapStateToProps = (state,ownProps) => ({
