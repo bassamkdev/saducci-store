@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import  { createGlobalStyle } from 'styled-components';
 
  export const GlobalStyle = createGlobalStyle`
     body {
@@ -19,3 +19,4 @@ import { createGlobalStyle } from 'styled-components';
          box-sizing: border-box;
     }
 `
+
