@@ -12,12 +12,13 @@ const stripeCheckoutButton = ({price}) => {
             url: 'payment',
             data: {
                 amount: stripePrice,
-                token
+                token: token
             }
         }).then(response => {
             alert('payment successful');
         }).catch(error =>{
-            console.log('payment error: ', JSON.parse(error));
+           console.log('payment error: ', JSON.parse(error));
+           console.log(error);
             alert('There was an issue with your payment, make sure that you are using provided test card.');
         })
     }
