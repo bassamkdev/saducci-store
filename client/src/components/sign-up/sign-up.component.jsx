@@ -7,7 +7,8 @@ import CustomButton from '../custom-button/custom-button.component'
 
 import {
     SignupContainer,
-    TitleContainer
+    TitleContainer,
+    ButtonsContainer
 } from './sign-up.styles'
 
 const SignUp = ({signUpStart}) => {
@@ -71,7 +72,9 @@ const SignUp = ({signUpStart}) => {
                     lable='Confirm Password'
                     required
                 />
-                <CustomButton type='submit' >SIGN UP </CustomButton>
+                <ButtonsContainer>
+                  <CustomButton type='submit'>SIGN UP </CustomButton>
+                </ButtonsContainer>
             </form>
         </SignupContainer>
     )
