@@ -1,6 +1,7 @@
 {
   "short_name": "Saducci",
   "name": "Saducci Store",
+  "display": "standalone",
   "icons": [
     {
       "src": "favicon.ico",
