@@ -8,6 +8,9 @@ import  { createGlobalStyle } from 'styled-components';
         @media screen and (max-width: 800px){
             padding: 10px;
         }
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
     }
 
     a {
