@@ -5,7 +5,7 @@ An e-commerce progressive web application similar to Shopify but built from scra
 1. Clone the project and `cd` into it
 2. Run `yarn`
 3. Run `yarn dev`, host the app locally and enjoy
-### Code highlits
+### Codebase highlits
 - [Express server to handle payments](https://github.com/bassamkdev/saducci-store/blob/master/server.js)
 - [Frontend codebase](https://github.com/bassamkdev/saducci-store/tree/master/client)
 - [All React components](https://github.com/bassamkdev/saducci-store/tree/master/client/src/components)
